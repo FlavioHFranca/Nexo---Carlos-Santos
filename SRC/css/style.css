@@ -13,6 +13,14 @@ header{
     /* background-color: #202020ea; */
     text-align: center;   
 }
+header nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+header nav img{
+    width: 15%;
+}
 header nav a li{
     color: #ffffff;
     font-family: "Raleway", sans-serif;
@@ -31,18 +39,24 @@ header nav a li:hover{
 /* Inicio do conteudo */
 .SectionInicial{
     width: 100%;
-    height: 500px;
+    height: 75vh;
     margin-top: 3vh;
     background-image: url(../img/bannerHome.jpg);
     background-position: center ;
     background-size: cover;
-    background-repeat: no-repeat;
-    /* filter: blur(3px); */
     display: column;
     align-items:center ;
     justify-content: center;
     
 }
+.blur{
+    background-color: #000000c5;
+    width: 100%;
+    height: 75vh;
+    position: absolute; 
+    z-index: 0; 
+}
+
 .SectionInicial h1{
     font-family: "Raleway", sans-serif;
     font-size: 3rem;
@@ -83,10 +97,50 @@ span{
 .carlosLogo img {
     max-width: 60%;
 }
-.blur{
-    background-color: #000000a9;
-  width: 100%;
-  height: 100%;
-  position: absolute; 
-  z-index: 0; 
+
+
+/* Inicio Sobre */
+
+.sectionSobre{ 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 90vh;
+}
+.containerSobre{
+    display: flex;
+    
+    width: 90%;
+    height: 80%;
+    background-color: #363636;
+    border-radius: 2px; 
+}
+.textoSobreSobre{
+    color: #FFFFFF;
+    background-color: rebeccapurple;
+    text-align: justify;
+    max-width: 40%;
+    margin-left: 30px;
+
+}
+.textoSobreSobre h1 {
+    font-weight: 600;
+    font-family: "Raleway", sans-serif;
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 3em;
+}
+.textoSobreSobre p{
+    font-size: 1.3em;
+    font-family: "Nunito",sans-serif;
+}
+
+.containerSobre img{
+    max-width: 30%;
+    margin: auto ;
+
+    
+    filter: drop-shadow(0 0 0.25rem rgb(220, 20, 20));
+      
 }
