@@ -1,27 +1,46 @@
-
 /* Importando fontes a serem usadas */
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 
-body{
+body {
     background-color: #161616;
 }
 
 /* Iniciação do cabeçalho */
-header{
+header {
     width: 100%;
     height: 50px;
     /* background-color: #202020ea; */
-    text-align: center;   
+    text-align: center;
 }
-header nav{
+
+header nav {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
 }
-header nav img{
-    width: 15%;
+
+header nav button {
+
+    font-family: "Raleway", sans-serif;
+    font-size: 1.1rem;
+    font-weight: 500;
+    width: 140px;
+    height: 40px;
+    background-color: #de070700;
+    color: #ffffff;
+    border-radius: 2px;
+    border: 2px solid #DE0707;
+
 }
-header nav a li{
+
+header nav button:hover {
+    background-color: #de0707;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+
+header nav a li {
     color: #ffffff;
     font-family: "Raleway", sans-serif;
     font-size: 1.1rem;
@@ -30,63 +49,66 @@ header nav a li{
     margin: 25px 15px 0 0;
     padding: 0 10px;
     display: inline-flex;
-    
-    
+
+
 }
-header nav a li:hover{
-    color:#dad8d8
+
+header nav a li:hover {
+    color: #dad8d8
 }
+
 /* Inicio do conteudo */
-.SectionInicial{
+.SectionInicial {
     width: 100%;
     height: 75vh;
     margin-top: 3vh;
     background-image: url(../img/bannerHome.jpg);
-    background-position: center ;
+    background-position: center;
     background-size: cover;
     display: column;
-    align-items:center ;
+    align-items: center;
     justify-content: center;
-    
+
 }
-.blur{
+
+.blur {
     background-color: #000000c5;
     width: 100%;
     height: 75vh;
-    position: absolute; 
-    z-index: 0; 
+    position: absolute;
+    z-index: 0;
 }
 
-.SectionInicial h1{
+.SectionInicial h1 {
     font-family: "Raleway", sans-serif;
     font-size: 3rem;
     font-weight: 600;
     text-align: center;
-    padding-top:6%;
-    color:#ffffff ;
+    padding-top: 6%;
+    color: #ffffff;
     /* background-color: black; */
     position: relative;
     z-index: 1;
 }
-span{
+
+span {
     color: #de0707e6;
     font-weight: 700;
-    font-size: 1.3em;
 }
 
-.SectionInicial p{
-    margin: 50px 10% ;
+.SectionInicial p {
+    margin: 50px 10%;
     text-align: center;
     color: #dad8d8;
     /* background-color: black; */
     font-size: 1.4em;
     font-weight: 500;
-    font-family: "Nunito",sans-serif;
+    font-family: "Nunito", sans-serif;
     position: relative;
     z-index: 1;
 }
 
-.carlosLogo{
+.carlosLogo {
     text-align: center;
     display: flex;
     align-items: center;
@@ -94,12 +116,13 @@ span{
     position: relative;
     z-index: 1;
 }
+
 .carlosLogo img {
     max-width: 60%;
 }
 
-
-/* Inicio Sobre */
+/* 
+Inicio Sobre
 
 .sectionSobre{ 
     display: flex;
@@ -139,8 +162,66 @@ span{
 .containerSobre img{
     max-width: 30%;
     margin: auto ;
-
-    
     filter: drop-shadow(0 0 0.25rem rgb(220, 20, 20));
       
+} */
+
+/* Inicio Assunto da pagina */
+
+.sectionAssunto {
+    /* background-color: rebeccapurple; */
+    width: 100%;
+    height: 90vh;
+    display: flex;
+
+}
+
+.textoAssunto {
+    color: #ffffff;
+    width: 50%;
+    /* background-color: rgb(255, 127, 127); */
+    margin: 80px 0 0 80px;
+}
+
+.textoAssunto h1 {
+    font-family: "Raleway", sans-serif;
+    font-size: 3em;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.textoAssunto p {
+    font-family: "Nunito", sans-serif;
+    font-size: 1.3em;
+    margin-bottom: 50px;
+    text-align: left;
+}
+
+.textoAssunto h2 {
+    font-family: "Raleway", sans-serif;
+    font-size: 2em;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+
+.textoAssunto li {
+    font-family: "Nunito", sans-serif;
+    font-weight: 400;
+    font-size: 1.1em;
+    margin-bottom: 30px;
+    list-style: square inside;
+    text-align: left;
+}
+
+.videoAssunto {
+    /* background-color: rebeccapurple; */
+    margin: auto;
+    padding: 20px;
+}
+
+.videoAssunto iframe {
+    max-width: 500px;
+    height: 400px;
+
 }
