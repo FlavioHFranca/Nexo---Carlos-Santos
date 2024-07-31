@@ -295,6 +295,27 @@ i.fa-solid.fa-table, i.fa-solid.fa-handshake,i.fa-solid.fa-rocket,i.fa-solid.fa-
 
 }
 
+.asFerramentas a button{
+    width: 200px;
+    height: 50px;
+    background-color: #de070700;
+    color: #ffffff;
+    border-radius: 2px;
+    border: 2px solid #DE0707;
+    background-color: #de0707;
+    margin-left: 20px;
+    margin-top: 40px;
+    font-family: "Raleway", sans-serif;
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+.asFerramentas a button:hover{
+    border: 2px solid #DE0707;
+    background-color: #363636;
+    font-weight: 700;
+    cursor: pointer;
+}
+
 /* SObre */
 
 .sectionSobre{ 
