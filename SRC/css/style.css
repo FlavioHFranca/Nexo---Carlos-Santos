@@ -8,7 +8,7 @@ body {
 /* Iniciação do cabeçalho */
 header {
     width: 100%;
-    height: 5vh;
+    height: 6vh;
     /* background-color: #202020ea; */
     text-align: center;
 }
@@ -77,14 +77,14 @@ header nav a li:hover {
     position: fixed;
     /* Posicionando o incone*/
     top: 50%;
-    left: 98.1%;
+    left: 97.8%;
     transform: translate(-50%, -50%);
 
     z-index: 1;
     /* Prioridade de visualização*/
-    width: 50px;
+    width: 70px;
     /* tamanho*/
-    opacity: 60%;
+    opacity: 90%;
     /* O quanto fica tranparente*/
     transition: all 0.4s ease-in-out;
 }
@@ -94,7 +94,7 @@ header nav a li:hover {
     position: fixed;
 
     top: 50%;
-    left: 97%;
+    left: 96.8%;
     transform: translate(-50%, -50%);
 
     width: 70px;
@@ -151,51 +151,6 @@ span {
 .carlosLogo img {
     max-width: 60%;
 }
-
-/* 
-Inicio Sobre
-
-.sectionSobre{ 
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: 90vh;
-}
-.containerSobre{
-    display: flex;
-    
-    width: 90%;
-    height: 80%;
-    background-color: #363636;
-    border-radius: 2px; 
-}
-.textoSobreSobre{
-    color: #FFFFFF;
-    background-color: rebeccapurple;
-    text-align: justify;
-    max-width: 40%;
-    margin-left: 30px;
-
-}
-.textoSobreSobre h1 {
-    font-weight: 600;
-    font-family: "Raleway", sans-serif;
-    margin-bottom: 30px;
-    text-align: center;
-    font-size: 3em;
-}
-.textoSobreSobre p{
-    font-size: 1.3em;
-    font-family: "Nunito",sans-serif;
-}
-
-.containerSobre img{
-    max-width: 30%;
-    margin: auto ;
-    filter: drop-shadow(0 0 0.25rem rgb(220, 20, 20));
-      
-} */
 
 
 /* Inicio Assunto da pagina */
@@ -262,7 +217,7 @@ Inicio Sobre
 .sectionFerramentas {
     background-color: #303030;
     width: 100%;
-    height: 180vh;
+    height: 140vh;
 }
 
 .textoFerramentas {
@@ -315,6 +270,9 @@ Inicio Sobre
     /* background-color: #16161661; */
     /* cursor: pointer; */
     transition: ease-in-out 0.3s;
+    box-shadow: 10px 10px 10px 10px rgba(0,0,0,0.50);
+
+    
 }
 
 i.fa-solid.fa-table, i.fa-solid.fa-handshake,i.fa-solid.fa-rocket,i.fa-solid.fa-file-contract,i.fa-solid.fa-file-signature,i.fa-solid.fa-book,i.fa-solid.fa-dollar-sign,i.fa-solid.fa-users-viewfinder,i.fa-solid.fa-comments,i.fa-solid.fa-check,i.fa-solid.fa-hand-holding-dollar,i.fa-solid.fa-map,i.fa-solid.fa-file-lines{
@@ -336,3 +294,72 @@ i.fa-solid.fa-table, i.fa-solid.fa-handshake,i.fa-solid.fa-rocket,i.fa-solid.fa-
     box-shadow: 0 0 1em #BD1D1E;
 
 }
+
+/* SObre */
+
+.sectionSobre{ 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 90vh;
+}
+.containerSobre{
+    display: flex;
+    
+    width: 90%;
+    height: 80%;
+    background-color: #363636;
+    
+    border-radius: 5px;
+}
+.textoSobreSobre{
+    color: #FFFFFF;
+    background-color: #363636;
+    box-shadow: 1 0 0.5em #BD1D1E;
+    box-shadow: 10px 10px 10px 10px rgba(0,0,0,0.50);
+    text-align: left;
+    max-width: 40%;
+    margin: 30px;
+    padding: 20px;
+
+}
+.textoSobreSobre h1 {
+    font-weight: 700;
+    font-family: "Raleway", sans-serif;
+    margin-bottom: 30px;
+    font-size: 3em;
+}
+.textoSobreSobre p{
+    font-size: 1.3em;
+    font-family: "Nunito",sans-serif;
+    line-height: 1.5em;
+}
+.textoSobreSobre p a{
+    color: #DE0707;
+}
+
+.containerSobre img{
+    max-width: 26.6%;
+    margin: auto ;
+    filter: drop-shadow(0 0 0.25rem rgb(220, 20, 20));
+      
+}
+
+/* footer */
+footer{    
+    box-shadow:0 0 10px #BD1D1E;
+    box-shadow:inset 0 0 10px #303030;
+    display: flex;
+    align-items:center ;
+    justify-content: center;
+    text-align: center;
+    color: #FFFFFF;
+    font-family: "Nunito",sans-serif;
+    padding: 20px 0;
+}
+
+footer img{
+    max-width: 50%;
+}
+
