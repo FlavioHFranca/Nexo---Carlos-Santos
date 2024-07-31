@@ -8,7 +8,7 @@ body {
 /* Iniciação do cabeçalho */
 header {
     width: 100%;
-    height: 50px;
+    height: 5vh;
     /* background-color: #202020ea; */
     text-align: center;
 }
@@ -49,6 +49,7 @@ header nav a li {
     margin: 25px 15px 0 0;
     padding: 0 10px;
     display: inline-flex;
+    list-style: none;
 
 
 }
@@ -69,6 +70,36 @@ header nav a li:hover {
     align-items: center;
     justify-content: center;
 
+}
+/* Whatsapp contato*/
+.contato-zap {
+    /* Fixando o incone do zap na tela*/
+    position: fixed;
+    /* Posicionando o incone*/
+    top: 50%;
+    left: 98.1%;
+    transform: translate(-50%, -50%);
+
+    z-index: 1;
+    /* Prioridade de visualização*/
+    width: 50px;
+    /* tamanho*/
+    opacity: 60%;
+    /* O quanto fica tranparente*/
+    transition: all 0.4s ease-in-out;
+}
+
+/* Mudando a opacidade, tamanho e posição*/
+.contato-zap:hover {
+    position: fixed;
+
+    top: 50%;
+    left: 97%;
+    transform: translate(-50%, -50%);
+
+    width: 70px;
+    opacity: 100%;
+    /* Tirandodo a tranparencia*/
 }
 
 .blur {
@@ -231,7 +262,7 @@ Inicio Sobre
 .sectionFerramentas {
     background-color: #303030;
     width: 100%;
-    height: 150vh;
+    height: 180vh;
 }
 
 .textoFerramentas {
@@ -264,16 +295,20 @@ Inicio Sobre
 .asFerramentas {
     /* background-color: rebeccapurple; */
     height: 70%;
-    margin: 70px 80px;
-    display: flex;
+    max-width: 1550px;
+    margin: 70PX auto;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);        
+    
+    
 }
 
 .TbPrefFinanceira {
-    width: 270px;
-    height: 300px;
+    width: 190px;
+    height: 270px;
     border: 3px solid #BD1D1E;
     border-radius: 10px;
-    box-shadow: 0 0 0.5em #BD1D1E;
+    box-shadow: 0 2 0.5em #BD1D1E;
     margin: 20px;
     display: flex;
     flex-direction: column;
@@ -282,7 +317,7 @@ Inicio Sobre
     transition: ease-in-out 0.3s;
 }
 
-i.fa-solid.fa-table {
+i.fa-solid.fa-table, i.fa-solid.fa-handshake,i.fa-solid.fa-rocket,i.fa-solid.fa-file-contract,i.fa-solid.fa-file-signature,i.fa-solid.fa-book,i.fa-solid.fa-dollar-sign,i.fa-solid.fa-users-viewfinder,i.fa-solid.fa-comments,i.fa-solid.fa-check,i.fa-solid.fa-hand-holding-dollar,i.fa-solid.fa-map,i.fa-solid.fa-file-lines{
     color: #DDE2E5;
     font-size: 3.1em;
     margin: 40px 0 60px 40px;
